@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Alamofire
 
 class CompleteViewController: UIViewController {
 
@@ -14,6 +15,10 @@ class CompleteViewController: UIViewController {
     @IBOutlet var orderdetail: UILabel!
     @IBOutlet var amount: UILabel!
     @IBOutlet var reservation: UILabel!
+    
+    let url = "http://172.16.9.172:6010/payment"
+    
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,7 +34,19 @@ class CompleteViewController: UIViewController {
         amount.text = String(pay)+"원"
         reservation.text = time
         
-        //orderdetail =
+        let parameters:[String:[String:String]] = [
+            "order":[
+                "menu":orderdetail.text!,
+                "money":amount.text!,
+                "reservation":reservation.text!
+            ]
+        ]
+        
+        Alamofire.request(url, method: .post, parameters: parameters, encoding: URLEncoding.default, headers: nil).responseString
+            { response in
+
+                
+        }
         // Do any additional setup after loading the view.
     }
 
