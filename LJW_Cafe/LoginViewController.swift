@@ -41,7 +41,7 @@ class LoginViewController: UIViewController,UITextFieldDelegate {
         
 
         //let url = "http://172.16.12.48:6010/login"
-        let url = "http://172.20.10.13:6011/login"
+        let url = "http://172.16.9.172:6010/login"
 
         Alamofire.request(url, method: .post, parameters: parameters, encoding: URLEncoding.default, headers: nil).responseString
             { response in

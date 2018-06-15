@@ -26,7 +26,7 @@
 		CDB9BA7C20C799EF009A9979 /* sample-1040-checkmark@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CDB9BA7820C799EE009A9979 /* sample-1040-checkmark@2x.png */; };
 		CDB9BA7D20C799EF009A9979 /* sample-316-truck.png in Resources */ = {isa = PBXBuildFile; fileRef = CDB9BA7920C799EE009A9979 /* sample-316-truck.png */; };
 		CDBE13BC20C9A0FD00F8F841 /* app_main.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CDBE13BB20C9A0FC00F8F841 /* app_main.jpg */; };
-		CDBE13BE20C9A32500F8F841 /* image.png in Resources */ = {isa = PBXBuildFile; fileRef = CDBE13BD20C9A32500F8F841 /* image.png */; };
+		CDDB5D8B20D36763001F9CE5 /* reservation.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CDDB5D8A20D36763001F9CE5 /* reservation.jpg */; };
 		CDF12A0620C7BE74005186BB /* PayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDF12A0520C7BE74005186BB /* PayViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -55,7 +55,7 @@
 		CDB9BA7820C799EE009A9979 /* sample-1040-checkmark@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sample-1040-checkmark@2x.png"; sourceTree = "<group>"; };
 		CDB9BA7920C799EE009A9979 /* sample-316-truck.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sample-316-truck.png"; sourceTree = "<group>"; };
 		CDBE13BB20C9A0FC00F8F841 /* app_main.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = app_main.jpg; sourceTree = "<group>"; };
-		CDBE13BD20C9A32500F8F841 /* image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = image.png; sourceTree = "<group>"; };
+		CDDB5D8A20D36763001F9CE5 /* reservation.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = reservation.jpg; sourceTree = "<group>"; };
 		CDF12A0520C7BE74005186BB /* PayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -137,8 +137,8 @@
 				CDB9BA7920C799EE009A9979 /* sample-316-truck.png */,
 				CDB9BA7620C799EE009A9979 /* sample-920-handbag@2x.png */,
 				CDB9BA7820C799EE009A9979 /* sample-1040-checkmark@2x.png */,
+				CDDB5D8A20D36763001F9CE5 /* reservation.jpg */,
 				CDBE13BB20C9A0FC00F8F841 /* app_main.jpg */,
-				CDBE13BD20C9A32500F8F841 /* image.png */,
 			);
 			path = Figures;
 			sourceTree = "<group>";
@@ -205,6 +205,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CDDB5D8B20D36763001F9CE5 /* reservation.jpg in Resources */,
 				CDBE13BC20C9A0FD00F8F841 /* app_main.jpg in Resources */,
 				CD84ADAC20BC4B2A003E74F0 /* LaunchScreen.storyboard in Resources */,
 				CD84ADB020BC4B2A003E74F0 /* Assets.xcassets in Resources */,
@@ -212,7 +213,6 @@
 				CDB9BA7C20C799EF009A9979 /* sample-1040-checkmark@2x.png in Resources */,
 				CDB9BA7D20C799EF009A9979 /* sample-316-truck.png in Resources */,
 				CD84ADAD20BC4B2A003E74F0 /* Main.storyboard in Resources */,
-				CDBE13BE20C9A32500F8F841 /* image.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -394,6 +394,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3T9VKX8576;
 				INFOPLIST_FILE = LJW_Cafe/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.swu.LJW-Cafe";
@@ -411,7 +412,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3T9VKX8576;
 				INFOPLIST_FILE = LJW_Cafe/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.swu.LJW-Cafe";
